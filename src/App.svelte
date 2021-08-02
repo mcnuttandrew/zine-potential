@@ -4,11 +4,11 @@
 <main>
   <h1>On the Potential of Zines as Medium for Visualization</h1>
   <h3>By <a href="http://mcnutt.in/">Andrew McNutt</a></h3>
+  <div>UGH STOP</div>
 </main>
 
 <style>
   main {
-    text-align: center;
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
