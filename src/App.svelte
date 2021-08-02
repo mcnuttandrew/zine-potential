@@ -3,6 +3,7 @@
 
 <main>
   <h1>On the Potential of Zines as Medium for Visualization</h1>
+  <h3>By <a href="http://mcnutt.in/">Andrew McNutt</a></h3>
 </main>
 
 <style>
