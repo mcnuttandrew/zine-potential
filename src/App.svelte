@@ -3,6 +3,7 @@
   import {fade, fly} from 'svelte/transition';
   import {flip} from 'svelte/animate';
   import {tsvParse} from 'd3-dsv';
+  import Tooltip from './Tooltip.svelte';
 
   const themes = [
     'Zines using visualization',
@@ -11,6 +12,15 @@
     'Zines about you',
     'Aligned with form',
   ];
+
+  const themeDescriptions = {
+    'Zines using visualization': 'Zines that use visualization in any way',
+    'Zines about data': 'Zines whose main focus is on describing data or using data to tell a story',
+    'Zines about visualization ': 'Zines whose topic is data visualization (or adjacent topics)',
+    'Zines about you': 'Zines that are personal (perzines)!',
+    'Aligned with form':
+      'Zines whose content "rhymes" with the form of the zine (like our zine about our paper)',
+  };
   let counts = themes.reduce((acc, row) => {
     acc[row] = 0;
     return acc;
@@ -57,7 +67,7 @@
 <main>
   <div class="background" />
   <div class="main-container">
-    <h1>On the Potential of Zines as Medium for Visualization</h1>
+    <h1>On the Potential of Zines as a Medium for Visualization</h1>
     <h3>IEEE Transactions on Visualization and Computer Graphics 2021 - Short Paper</h3>
     <h3>By <a href="http://mcnutt.in/">Andrew McNutt</a></h3>
 
@@ -143,14 +153,17 @@
         </select>
       </div>
       <div>
-        <span>Show me just</span>
-
-        {#each themes as theme, idx}
-          <div class="theme theme-{idx}" on:click={() => sortAndFilter(theme)}>
-            {theme} ({counts[theme]})
-          </div>
-        {/each}
-        <button on:click={() => sortAndFilter(undefined)}>nevermind!</button>
+        <span>Show me just:</span>
+        <div class="flex">
+          {#each themes as theme, idx}
+            <Tooltip title={themeDescriptions[theme]}>
+              <div class="theme theme-{idx}" on:click={() => sortAndFilter(theme)}>
+                {theme} ({counts[theme]})
+              </div>
+            </Tooltip>
+          {/each}
+        </div>
+        <button on:click={() => sortAndFilter(undefined)}>nevermind! clear filters</button>
       </div>
       <div class="flex-down">
         {#each data as row, index (row)}
@@ -190,6 +203,10 @@
     height: 100%;
   }
 
+  .flex {
+    display: flex;
+  }
+
   .background {
     /* http://www.heropatterns.com/ */
     background-color: #ffffff;
@@ -227,9 +244,13 @@
   button {
     background: none;
   }
+  img {
+    border: thin solid black;
+  }
 
   .center-display {
     display: flex;
+    align-items: center;
   }
 
   .description {
