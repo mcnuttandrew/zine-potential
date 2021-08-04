@@ -1,4 +1,4 @@
-# On the Potential of Zines as Medium for Visualization - Supplement Site
+# On the Potential of Zines as a Medium for Visualization - Supplement Site
 
 Install the dependencies...
 
