@@ -79,7 +79,7 @@
           target="_blank">smart watches</a
         >, in <a href="https://data-gifs.github.io/" target="_blank">gifs</a>, in
         <a href="https://aviz.fr/~bbach/datacomics/" target="_blank">comics</a>, in a whole host of additional
-        contexts. Concurent with this medium explosion there has been a growing interest in visualization
+        contexts. Concurrent with this medium explosion there has been a growing interest in visualization
         research to consider issues inclusivity,
         <a href="http://giorgialupi.com/data-humanism-my-manifesto-for-a-new-data-wold" target="_blank"
           >humanism</a
@@ -88,7 +88,7 @@
       </p>
 
       <p>
-        Surprsingly, these twin interests have not yet converged (at least not substantially) in the humble
+        Surprisingly, these twin interests have not yet converged (at least not substantially) in the humble
         medium of the zine! Zines are a form of small-circulation self-produced publication often akin to a
         magazine. This free-form medium has a long history and has been used as means for personal or intimate
         expression, as a way for marginalized people to describe issues that are important to them, and as a
@@ -117,7 +117,7 @@
           <a href="https://capp-30239-winter-2021.netlify.app/#staticShowcase">here</a> (although not all of
           them are zines!)). In our survey of zines using visualization, we identified
           <span class="yet">44</span>
-          zines that use visualization in someway (although visualization is
+          zines that use visualization in some way (although visualization is
           <i>quite</i> loosely defined). In the interest of transparency we provide a list of these zines below.
         </p>
       </div>
