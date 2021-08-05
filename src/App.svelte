@@ -125,7 +125,7 @@
     <div>
       <p>
         You can read more about this work in the paper (which is freely available <a
-          href="https://www.mcnutt.in/">here</a
+          href="https://arxiv.org/abs/2108.02177">here</a
         >). But, if reading papers isn't your thing, we've also produced a zine describing the paper. You can
         view a
         <a href="assets/printable-zine.pdf">printer friendly version</a> or a
