@@ -70,6 +70,12 @@
     <h1>On the Potential of Zines as a Medium for Visualization</h1>
     <h3>IEEE Transactions on Visualization and Computer Graphics 2021 - Short Paper</h3>
     <h3>By <a href="http://mcnutt.in/">Andrew McNutt</a></h3>
+    <h5>
+      <a href="https://arxiv.org/abs/2108.02177">Preprint</a><span class="link-divider">•</span>
+      <a href="assets/printable-zine.pdf">Printable Zine</a><span class="link-divider">•</span><a
+        href="assets/web-zine.pdf">Web Zine</a
+      >
+    </h5>
 
     <div>
       <p>
@@ -234,7 +240,7 @@
     font-weight: bolder;
   }
 
-  h3 {
+  h5 {
     margin-bottom: 10px;
   }
 
@@ -261,6 +267,11 @@
     font-size: 1.5em;
     font-weight: bolder;
     font-style: italic;
+  }
+
+  .link-divider {
+    margin: 0 10px;
+    display: inline-block;
   }
 
   .zine-row {
